@@ -1,0 +1,19 @@
+$primaryColor: red;
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primaryColor;
+    color: white;
+    span{
+        padding: .2rem;
+        &:hover{
+            background: #000;
+            cursor: pointer;
+        }
+        &::after{
+            content: 'Hello';
+        }
+    }
+}
